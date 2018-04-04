@@ -1,0 +1,15 @@
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\ølCatalog.exe.config
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\ølCatalog.exe
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\ølCatalog.pdb
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\obj\Debug\ølCatalog.csprojResolveAssemblyReference.cache
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\obj\Debug\ølCatalog.csproj.CoreCompileInputs.cache
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\obj\Debug\ølCatalog.exe
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\obj\Debug\ølCatalog.pdb
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\BLC.dll
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\CORE.dll
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\DAOMock.dll
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\Interfaces.dll
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\BLC.pdb
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\CORE.pdb
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\DAOMock.pdb
+C:\Users\inf127303\source\repos\ølCatalog\ølCatalog\bin\Debug\Interfaces.pdb

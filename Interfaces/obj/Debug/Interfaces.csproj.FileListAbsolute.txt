@@ -1,0 +1,8 @@
+C:\Users\inf127303\source\repos\ølCatalog\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\inf127303\source\repos\ølCatalog\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\inf127303\source\repos\ølCatalog\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\inf127303\source\repos\ølCatalog\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\inf127303\source\repos\ølCatalog\Interfaces\bin\Debug\CORE.dll
+C:\Users\inf127303\source\repos\ølCatalog\Interfaces\bin\Debug\CORE.pdb
+C:\Users\inf127303\source\repos\ølCatalog\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\inf127303\source\repos\ølCatalog\Interfaces\obj\Debug\Interfaces.pdb

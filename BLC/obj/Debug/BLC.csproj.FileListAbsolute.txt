@@ -1,0 +1,12 @@
+C:\Users\inf127303\source\repos\ølCatalog\BLC\bin\Debug\BLC.dll
+C:\Users\inf127303\source\repos\ølCatalog\BLC\bin\Debug\BLC.pdb
+C:\Users\inf127303\source\repos\ølCatalog\BLC\bin\Debug\DAOMock.dll
+C:\Users\inf127303\source\repos\ølCatalog\BLC\bin\Debug\Interfaces.dll
+C:\Users\inf127303\source\repos\ølCatalog\BLC\bin\Debug\CORE.dll
+C:\Users\inf127303\source\repos\ølCatalog\BLC\bin\Debug\DAOMock.pdb
+C:\Users\inf127303\source\repos\ølCatalog\BLC\bin\Debug\Interfaces.pdb
+C:\Users\inf127303\source\repos\ølCatalog\BLC\bin\Debug\CORE.pdb
+C:\Users\inf127303\source\repos\ølCatalog\BLC\obj\Debug\BLC.csprojResolveAssemblyReference.cache
+C:\Users\inf127303\source\repos\ølCatalog\BLC\obj\Debug\BLC.csproj.CoreCompileInputs.cache
+C:\Users\inf127303\source\repos\ølCatalog\BLC\obj\Debug\BLC.dll
+C:\Users\inf127303\source\repos\ølCatalog\BLC\obj\Debug\BLC.pdb
