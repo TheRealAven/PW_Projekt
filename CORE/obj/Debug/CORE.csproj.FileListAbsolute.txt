@@ -4,3 +4,9 @@ C:\Users\inf127303\source\repos\ølCatalog\CORE\obj\Debug\CORE.csprojResolveAsse
 C:\Users\inf127303\source\repos\ølCatalog\CORE\obj\Debug\CORE.csproj.CoreCompileInputs.cache
 C:\Users\inf127303\source\repos\ølCatalog\CORE\obj\Debug\CORE.dll
 C:\Users\inf127303\source\repos\ølCatalog\CORE\obj\Debug\CORE.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\CORE\bin\Debug\CORE.dll
+C:\Users\Oskar\Desktop\PW_Projekt\CORE\bin\Debug\CORE.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\CORE\obj\Debug\CORE.csprojResolveAssemblyReference.cache
+C:\Users\Oskar\Desktop\PW_Projekt\CORE\obj\Debug\CORE.csproj.CoreCompileInputs.cache
+C:\Users\Oskar\Desktop\PW_Projekt\CORE\obj\Debug\CORE.dll
+C:\Users\Oskar\Desktop\PW_Projekt\CORE\obj\Debug\CORE.pdb

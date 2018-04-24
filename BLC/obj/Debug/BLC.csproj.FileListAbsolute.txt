@@ -10,3 +10,17 @@ C:\Users\inf127303\source\repos\ølCatalog\BLC\obj\Debug\BLC.csprojResolveAssemb
 C:\Users\inf127303\source\repos\ølCatalog\BLC\obj\Debug\BLC.csproj.CoreCompileInputs.cache
 C:\Users\inf127303\source\repos\ølCatalog\BLC\obj\Debug\BLC.dll
 C:\Users\inf127303\source\repos\ølCatalog\BLC\obj\Debug\BLC.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\bin\Debug\BLC.dll.config
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\bin\Debug\BLC.dll
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\bin\Debug\BLC.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\bin\Debug\DAOMock.dll
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\bin\Debug\Interfaces.dll
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\bin\Debug\CORE.dll
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\bin\Debug\DAOMock.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\bin\Debug\Interfaces.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\bin\Debug\CORE.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\obj\Debug\BLC.csprojResolveAssemblyReference.cache
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\obj\Debug\BLC.csproj.CoreCompileInputs.cache
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\obj\Debug\BLC.csproj.CopyComplete
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\obj\Debug\BLC.dll
+C:\Users\Oskar\Desktop\PW_Projekt\BLC\obj\Debug\BLC.pdb

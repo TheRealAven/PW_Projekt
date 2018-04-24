@@ -9,30 +9,30 @@ namespace Obst.ølCatalog.DAOMock
 {
     public class DAO: IDAO
     {
-        private List<IProducent> producenci;
-        private List<IPiwo> piwa;
+        private List<IProducent> _producenci;
+        private List<IPiwo> _piwa;
 
         public DAO()
         {
-            producenci = new List<IProducent>
+            _producenci = new List<IProducent>
             {
                 new Producent(){Nazwa="Żywiec", Miasto="Żywiec" },
                 new Producent(){Nazwa="Browar Fortuna", Miasto="Miłosław"}
             };
-            piwa = new List<IPiwo>
+            _piwa = new List<IPiwo>
             {
-                new Piwo(){Cena=5, Nazwa="Żywiec",KolorPiwa=CORE.Kolor.Jasne,ProcentAlkoholu=4,ProducentPiwa=producenci[0]}
+                new Piwo(){Cena=5, Nazwa="Żywiec",KolorPiwa=CORE.Kolor.Jasne,ProcentAlkoholu=4,ProducentPiwa=_producenci[0]}
             };
         }
 
         public IEnumerable<IPiwo> GetAllPiwa()
         {
-            return piwa;
+            return _piwa;
         }
 
         public IEnumerable<IProducent> GetAllProducenci()
         {
-            return producenci;
+            return _producenci;
         }
     }
 }

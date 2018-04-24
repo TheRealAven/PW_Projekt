@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Obst.ølCatalog.Interfaces;
-using Obst.ølCatalog.DAOMock;
+using System.Reflection;
+using BLC.Properties;
 
 namespace Obst.ølCatalog.BLC
 {
     public class DataProvider
     {
+        private Settings _settings = new Settings();
         public IDAO DAO { get; set; }
         public IEnumerable<IPiwo> Piwa
         {
@@ -20,9 +22,18 @@ namespace Obst.ølCatalog.BLC
             get { return DAO.GetAllProducenci(); }
         }
 
+        private void _loadChosenDatabase()
+        {
+            Assembly assemblyDAO = Assembly.UnsafeLoadFrom(System.IO.Directory.GetParent(System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).ToString()).ToString() + "/" + _settings.mockName + ".dll");
+            Type typeDAO = assemblyDAO.GetType("Obst.ølCatalog." + _settings.mockName + ".DAO");
+            ConstructorInfo constructorInfo = typeDAO.GetConstructor(new Type[] { });
+            var tempDAOObject = constructorInfo.Invoke(new object[] { });
+            DAO = (IDAO)tempDAOObject;
+        }
+
         public DataProvider()
         {
-            DAO = (IDAO) new DAOMock.DAO();
+            _loadChosenDatabase();
         }
     }
 }

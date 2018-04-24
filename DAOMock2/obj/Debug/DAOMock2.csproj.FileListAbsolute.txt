@@ -1,0 +1,10 @@
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\bin\Debug\DAOMock2.dll
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\bin\Debug\DAOMock2.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\bin\Debug\CORE.dll
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\bin\Debug\Interfaces.dll
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\bin\Debug\CORE.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\bin\Debug\Interfaces.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.csproj.CoreCompileInputs.cache
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.csproj.CopyComplete
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.dll
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.pdb

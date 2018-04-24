@@ -57,10 +57,6 @@
       <Project>{7ff0a7e8-798d-4a71-a0eb-e9da41f785e5}</Project>
       <Name>CORE</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DAOMock\DAOMock.csproj">
-      <Project>{178c39ed-850c-4722-b32a-ee7d311fcb33}</Project>
-      <Name>DAOMock</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{7d71a3a2-8239-443a-ac71-2ea1854d32ab}</Project>
       <Name>Interfaces</Name>

@@ -8,3 +8,14 @@ C:\Users\inf127303\source\repos\ølCatalog\DAOMock\bin\Debug\Interfaces.pdb
 C:\Users\inf127303\source\repos\ølCatalog\DAOMock\obj\Debug\DAOMock.csprojResolveAssemblyReference.cache
 C:\Users\inf127303\source\repos\ølCatalog\DAOMock\obj\Debug\DAOMock.dll
 C:\Users\inf127303\source\repos\ølCatalog\DAOMock\obj\Debug\DAOMock.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\bin\Debug\DAOMock.dll
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\bin\Debug\DAOMock.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\bin\Debug\CORE.dll
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\bin\Debug\Interfaces.dll
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\bin\Debug\CORE.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\bin\Debug\Interfaces.pdb
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\obj\Debug\DAOMock.csprojResolveAssemblyReference.cache
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\obj\Debug\DAOMock.csproj.CoreCompileInputs.cache
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\obj\Debug\DAOMock.csproj.CopyComplete
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\obj\Debug\DAOMock.dll
+C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\obj\Debug\DAOMock.pdb
