@@ -21,7 +21,10 @@ namespace Obst.ølCatalog.DAOMock
             };
             _piwa = new List<IPiwo>
             {
-                new Piwo(){Cena=5, Nazwa="Żywiec",KolorPiwa=CORE.Kolor.Jasne,ProcentAlkoholu=4,ProducentPiwa=_producenci[0]}
+                new Piwo(){Cena=5, Nazwa="Żywiec",KolorPiwa=CORE.Kolor.Jasne,ProcentAlkoholu=4,ProducentPiwa=_producenci[0]},
+                new Piwo(){Cena=7.59, Nazwa="Komes Belgian Ipa",KolorPiwa=CORE.Kolor.Jasne,ProcentAlkoholu=8,ProducentPiwa=_producenci[1]},
+                new Piwo(){Cena=4.59, Nazwa="Miłosław Witbier",KolorPiwa=CORE.Kolor.Jasne,ProcentAlkoholu=4.5,ProducentPiwa=_producenci[1]},
+                new Piwo(){Cena=4.99, Nazwa="Fortuna Czarna",KolorPiwa=CORE.Kolor.Ciemne,ProcentAlkoholu=5,ProducentPiwa=_producenci[1]}
             };
         }
 

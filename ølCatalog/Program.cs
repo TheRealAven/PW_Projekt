@@ -11,7 +11,7 @@ namespace Obst.ølCatalog
     {
         public static void Main(string[] args)
         {
-            BLC.DataProvider dataProvider = new DataProvider();
+            BLC.DataProvider dataProvider = new DataProvider("DAOMock");
             foreach(var p in dataProvider.Producenci)
             {
                 Console.WriteLine($"{p.Nazwa}");

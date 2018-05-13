@@ -8,3 +8,13 @@ C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.csproj.CoreCompile
 C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.csproj.CopyComplete
 C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.dll
 C:\Users\Oskar\Desktop\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\bin\Debug\DAOMock2.dll
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\bin\Debug\DAOMock2.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\bin\Debug\CORE.dll
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\bin\Debug\Interfaces.dll
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\bin\Debug\CORE.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\bin\Debug\Interfaces.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.csproj.CoreCompileInputs.cache
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.csproj.CopyComplete
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.dll
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.pdb

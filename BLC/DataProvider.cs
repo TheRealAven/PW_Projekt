@@ -22,18 +22,23 @@ namespace Obst.ølCatalog.BLC
             get { return DAO.GetAllProducenci(); }
         }
 
-        private void _loadChosenDatabase()
+        public DataProvider(string whichMock)
         {
-            Assembly assemblyDAO = Assembly.UnsafeLoadFrom(System.IO.Directory.GetParent(System.IO.Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).ToString()).ToString() + "/" + _settings.mockName + ".dll");
-            Type typeDAO = assemblyDAO.GetType("Obst.ølCatalog." + _settings.mockName + ".DAO");
+            Assembly assemblyDAO = Assembly.UnsafeLoadFrom(whichMock + ".dll");
+            Type typeDAO = null;
+
+            foreach (Type tempType in assemblyDAO.GetTypes())
+            {
+                if (tempType.GetInterfaces().Contains<Type>(typeof(IDAO)))
+                {
+                    typeDAO = tempType;
+                    break;
+                }
+            }
+
             ConstructorInfo constructorInfo = typeDAO.GetConstructor(new Type[] { });
             var tempDAOObject = constructorInfo.Invoke(new object[] { });
             DAO = (IDAO)tempDAOObject;
-        }
-
-        public DataProvider()
-        {
-            _loadChosenDatabase();
         }
     }
 }

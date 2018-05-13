@@ -1,0 +1,72 @@
+﻿<Window x:Class="Obst.ølCatalog.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Name="Window1">
+
+    <TabControl>
+        <TabItem Header="Piwa">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <DockPanel Grid.Column="0" Grid.Row="0">
+                    <ListBox Name="PiwoListPanel" ItemsSource="{Binding ElementName=Window1, Path=PiwoDataList }" DisplayMemberPath="Nazwa">
+                    </ListBox>
+                </DockPanel>
+                <DockPanel Grid.Column="1" Grid.Row="0" Name="PiwoDetailsList" DataContext="{Binding ElementName=PiwoListPanel, Path=SelectedItem }">
+                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Text="{Binding Path='Nazwa' }" />
+                    </StackPanel>
+                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                        <TextBlock>Cena:</TextBlock>
+                        <TextBlock Text="{Binding Path='Cena' }" />
+                        <TextBlock> zl</TextBlock>
+                    </StackPanel>
+                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                        <TextBlock>Zawartosc alkoholu:</TextBlock>
+                        <TextBlock Text="{Binding Path='ProcentAlkoholu' }" />
+                        <TextBlock> %</TextBlock>
+                    </StackPanel>
+                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                        <TextBlock>Kolor piwa:</TextBlock>
+                        <TextBlock Text="{Binding Path='KolorPiwa' }" />
+                    </StackPanel>
+                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                        <TextBlock>Producent:</TextBlock>
+                        <TextBlock Text="{Binding Path='ProducentPiwa.Nazwa' }" />
+                    </StackPanel>
+                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                        <TextBlock>  Miasto producenta:</TextBlock>
+                        <TextBlock Text="{Binding Path='ProducentPiwa.Miasto' }" />
+                    </StackPanel>
+                </DockPanel>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Producenci">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <DockPanel Grid.Column="0" Grid.Row="0">
+                    <ListBox Name="ProducentListPanel" ItemsSource="{Binding ElementName=Window1, Path=ProducentDataList }" DisplayMemberPath="Nazwa">
+                    </ListBox>
+                </DockPanel>
+                <DockPanel Grid.Column="1" Grid.Row="0" Name="ProdDetailsList" DataContext="{Binding ElementName=ProducentListPanel, Path=SelectedItem }">
+                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                        <TextBlock FontSize="20" Text="{Binding Path='Nazwa' }" />
+                    </StackPanel>
+                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+                        <TextBlock>  Miasto producenta:</TextBlock>
+                        <TextBlock Text="{Binding Path='Miasto' }" />
+                    </StackPanel>
+                </DockPanel>
+            </Grid>
+        </TabItem>
+    </TabControl>
+</Window>

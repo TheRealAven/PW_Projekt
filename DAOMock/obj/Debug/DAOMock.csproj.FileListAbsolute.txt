@@ -19,3 +19,14 @@ C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\obj\Debug\DAOMock.csproj.CoreCompileIn
 C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\obj\Debug\DAOMock.csproj.CopyComplete
 C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\obj\Debug\DAOMock.dll
 C:\Users\Oskar\Desktop\PW_Projekt\DAOMock\obj\Debug\DAOMock.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\bin\Debug\DAOMock.dll
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\bin\Debug\DAOMock.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\bin\Debug\CORE.dll
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\bin\Debug\Interfaces.dll
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\bin\Debug\CORE.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\bin\Debug\Interfaces.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\obj\Debug\DAOMock.csprojResolveAssemblyReference.cache
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\obj\Debug\DAOMock.csproj.CoreCompileInputs.cache
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\obj\Debug\DAOMock.csproj.CopyComplete
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\obj\Debug\DAOMock.dll
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock\obj\Debug\DAOMock.pdb
