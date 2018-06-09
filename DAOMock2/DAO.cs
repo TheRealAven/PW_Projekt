@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Obst.ølCatalog.CORE;
 using Obst.ølCatalog.Interfaces;
 
 namespace Obst.ølCatalog.DAOMock2
@@ -26,6 +27,23 @@ namespace Obst.ølCatalog.DAOMock2
             };
         }
 
+        public IPiwo AddNewPiwo()
+        {
+            IPiwo tPiwo = new Piwo();
+            tPiwo.Nazwa = "";
+            tPiwo.Cena = 0.0;
+            tPiwo.ProcentAlkoholu = 0.0;
+            return tPiwo;
+        }
+
+        public IProducent AddNewProducent()
+        {
+            IProducent tProd = new Producent();
+            tProd.Nazwa = "";
+            tProd.Miasto = "";
+            return tProd;
+        }
+
         public IEnumerable<IPiwo> GetAllPiwa()
         {
             return _piwa;
@@ -34,6 +52,26 @@ namespace Obst.ølCatalog.DAOMock2
         public IEnumerable<IProducent> GetAllProducenci()
         {
             return _producenci;
+        }
+
+        public void SavePiwo(IPiwo piwo)
+        {
+            _piwa.Add(piwo);
+        }
+
+        public void SavePiwo(IPiwo piwo, int indeks)
+        {
+            _piwa[indeks] = piwo;
+        }
+
+        public void SaveProducent(IProducent producent)
+        {
+            _producenci.Add(producent);
+        }
+
+        public void SaveProducent(IProducent producent, int indeks)
+        {
+            _producenci[indeks] = producent;
         }
     }
 }

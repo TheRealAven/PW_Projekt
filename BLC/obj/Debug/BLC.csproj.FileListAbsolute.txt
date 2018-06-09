@@ -33,8 +33,8 @@ D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\BLC\bin\Debug\CORE.dll
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\BLC\bin\Debug\DAOMock.pdb
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\BLC\bin\Debug\Interfaces.pdb
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\BLC\bin\Debug\CORE.pdb
-D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\BLC\obj\Debug\BLC.csprojResolveAssemblyReference.cache
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\BLC\obj\Debug\BLC.csproj.CoreCompileInputs.cache
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\BLC\obj\Debug\BLC.csproj.CopyComplete
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\BLC\obj\Debug\BLC.dll
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\BLC\obj\Debug\BLC.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\BLC\obj\Debug\BLC.csprojAssemblyReference.cache

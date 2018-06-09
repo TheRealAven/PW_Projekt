@@ -24,25 +24,9 @@ namespace Obst.ølCatalog.UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Settings _appSettings = new Settings();
-        private ObservableCollection<IPiwo> _piwoDataList;
-        public ObservableCollection<IPiwo> PiwoDataList
-        {
-            get { return _piwoDataList; }
-            set { _piwoDataList = value; }
-        }
-        private ObservableCollection<IProducent> _producentDataList;
-        public ObservableCollection<IProducent> ProducentDataList
-        {
-            get { return _producentDataList; }
-            set { _producentDataList = value; }
-        }
 
         public MainWindow()
         {
-            DataProvider provider = new DataProvider(_appSettings.mockName);
-            PiwoDataList = new ObservableCollection<IPiwo>(provider.Piwa);
-            ProducentDataList = new ObservableCollection<IProducent>(provider.Producenci);
             InitializeComponent();
         }
     }

@@ -38,8 +38,8 @@ D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\ølCatalog\bin\Debug\BLC.pdb
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\ølCatalog\bin\Debug\BLC.dll.config
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\ølCatalog\bin\Debug\CORE.pdb
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\ølCatalog\bin\Debug\Interfaces.pdb
-D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\ølCatalog\obj\Debug\ølCatalog.csprojResolveAssemblyReference.cache
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\ølCatalog\obj\Debug\ølCatalog.csproj.CoreCompileInputs.cache
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\ølCatalog\obj\Debug\ølCatalog.csproj.CopyComplete
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\ølCatalog\obj\Debug\ølCatalog.exe
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\ølCatalog\obj\Debug\ølCatalog.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\ølCatalog\obj\Debug\ølCatalog.csprojAssemblyReference.cache

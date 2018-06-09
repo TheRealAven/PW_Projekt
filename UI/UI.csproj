@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Converters\ErrorsMarginConverter.cs" />
+    <Compile Include="ViewModels\PiwoListViewModel.cs" />
+    <Compile Include="ViewModels\PiwoViewModel.cs" />
+    <Compile Include="ViewModels\ProducentListViewModel.cs" />
+    <Compile Include="ViewModels\ProducentViewModel.cs" />
+    <Compile Include="ViewModels\RelayCommand.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -97,6 +105,10 @@
     <ProjectReference Include="..\BLC\BLC.csproj">
       <Project>{449c4615-3572-43fe-bebb-4c797284b0f5}</Project>
       <Name>BLC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CORE\CORE.csproj">
+      <Project>{7ff0a7e8-798d-4a71-a0eb-e9da41f785e5}</Project>
+      <Name>CORE</Name>
     </ProjectReference>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{7d71a3a2-8239-443a-ac71-2ea1854d32ab}</Project>

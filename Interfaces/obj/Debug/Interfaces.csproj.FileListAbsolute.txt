@@ -19,8 +19,8 @@ D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\Interfaces\bin\Debug\Interfac
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\Interfaces\bin\Debug\Interfaces.pdb
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\Interfaces\bin\Debug\CORE.dll
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\Interfaces\bin\Debug\CORE.pdb
-D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\Interfaces\obj\Debug\Interfaces.csproj.CopyComplete
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\Interfaces\obj\Debug\Interfaces.dll
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\Interfaces\obj\Debug\Interfaces.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\Interfaces\obj\Debug\Interfaces.csprojAssemblyReference.cache

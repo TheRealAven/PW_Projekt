@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Obst.ølCatalog.Interfaces;
 using System.Reflection;
 using BLC.Properties;
+using Obst.ølCatalog.CORE;
 
 namespace Obst.ølCatalog.BLC
 {
@@ -22,17 +23,56 @@ namespace Obst.ølCatalog.BLC
             get { return DAO.GetAllProducenci(); }
         }
 
+        public IProducent AddProducent()
+        {
+            return DAO.AddNewProducent();
+        }
+
+        public IPiwo AddPiwo()
+        {
+            return DAO.AddNewPiwo();
+        }
+
+        public void SavePiwo(IPiwo piwo)
+        {
+            DAO.SavePiwo(piwo);
+        }
+
+        public void SavePiwo(IPiwo piwo, int indeks)
+        {
+            DAO.SavePiwo(piwo, indeks);
+        }
+
+        public void SaveProducent(IProducent producent)
+        {
+            DAO.SaveProducent(producent);
+        }
+
+        public void SaveProducent(IProducent producent, int indeks)
+        {
+            DAO.SaveProducent(producent, indeks);
+        }
+
         public DataProvider(string whichMock)
         {
             Assembly assemblyDAO = Assembly.UnsafeLoadFrom(whichMock + ".dll");
             Type typeDAO = null;
 
-            foreach (Type tempType in assemblyDAO.GetTypes())
+            try
             {
-                if (tempType.GetInterfaces().Contains<Type>(typeof(IDAO)))
+                foreach (Type tempType in assemblyDAO.GetTypes())
                 {
-                    typeDAO = tempType;
-                    break;
+                    if (tempType.GetInterfaces().Contains<Type>(typeof(IDAO)))
+                    {
+                        typeDAO = tempType;
+                        break;
+                    }
+                }
+            }catch(ReflectionTypeLoadException ex)
+            {
+                foreach(var e in ex.LoaderExceptions)
+                {
+                    Console.WriteLine(e.Message);
                 }
             }
 

@@ -3,70 +3,129 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UI"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        xmlns:StyleAlias="clr-namespace:Obst.ølCatalog.CORE;assembly=CORE"
+        xmlns:local="clr-namespace:Obst.ølCatalog.UI"
+        xmlns:converters="clr-namespace:Obst.ølCatalog.UI.Converters"
+        xmlns:viewmodels="clr-namespace:Obst.ølCatalog.UI.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Name="Window1">
 
+    <Window.Resources>
+        <ObjectDataProvider x:Key="dataFromEnum" MethodName="GetValues"
+                            ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="StyleAlias:Kolor"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <converters:ErrorsMarginConverter x:Key="ErrorConverter" />
+        <Style x:Key="BoxWithErrors">
+            <Setter Property="Validation.ErrorTemplate" >
+                <Setter.Value>
+                    <ControlTemplate>
+                        <DockPanel LastChildFill="True">
+                            <ListBox DockPanel.Dock="Bottom" ItemsSource="{Binding ElementName=ErrorComponent, Path=AdornedElement.(Validation.Errors)}" DisplayMemberPath="ErrorContent" />
+                            <Grid DockPanel.Dock="Left" >
+                                <Ellipse Width="20" Height="20" Stroke="OrangeRed" Fill="DarkRed" StrokeThickness="2" />
+                                <Label Content="{Binding ElementName=ErrorComponent, Path=AdornedElement.(Validation.Errors).Count }" Foreground="White" />
+                            </Grid>
+                            <Border BorderBrush="IndianRed" BorderThickness="2" >
+                                <AdornedElementPlaceholder Name="ErrorComponent" />
+                            </Border>
+                        </DockPanel>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Control.MinWidth" Value="150" />
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True" >
+                    <Setter Property="Control.Margin" Value="20,2,2,30" />
+                    <!--<Setter Property="Control.Margin" Value="{Binding ElementName=, Path=ErrorTemplate.ErrorComponent.AdornedElement.(Validation.Errors).Count ,Converter={StaticResource ErrorConverter}}" />
+                    -->
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    
     <TabControl>
         <TabItem Header="Piwa">
-            <Grid >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="2*" />
-                </Grid.ColumnDefinitions>
-                <DockPanel Grid.Column="0" Grid.Row="0">
-                    <ListBox Name="PiwoListPanel" ItemsSource="{Binding ElementName=Window1, Path=PiwoDataList }" DisplayMemberPath="Nazwa">
-                    </ListBox>
-                </DockPanel>
-                <DockPanel Grid.Column="1" Grid.Row="0" Name="PiwoDetailsList" DataContext="{Binding ElementName=PiwoListPanel, Path=SelectedItem }">
-                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-                        <TextBlock FontSize="20" Text="{Binding Path='Nazwa' }" />
-                    </StackPanel>
-                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-                        <TextBlock>Cena:</TextBlock>
-                        <TextBlock Text="{Binding Path='Cena' }" />
-                        <TextBlock> zl</TextBlock>
-                    </StackPanel>
-                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-                        <TextBlock>Zawartosc alkoholu:</TextBlock>
-                        <TextBlock Text="{Binding Path='ProcentAlkoholu' }" />
-                        <TextBlock> %</TextBlock>
-                    </StackPanel>
-                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-                        <TextBlock>Kolor piwa:</TextBlock>
-                        <TextBlock Text="{Binding Path='KolorPiwa' }" />
-                    </StackPanel>
-                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-                        <TextBlock>Producent:</TextBlock>
-                        <TextBlock Text="{Binding Path='ProducentPiwa.Nazwa' }" />
-                    </StackPanel>
-                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-                        <TextBlock>  Miasto producenta:</TextBlock>
-                        <TextBlock Text="{Binding Path='ProducentPiwa.Miasto' }" />
-                    </StackPanel>
-                </DockPanel>
-            </Grid>
+            <TabItem.DataContext>
+                <viewmodels:PiwoListViewModel />
+            </TabItem.DataContext>
+            <DockPanel LastChildFill="True">
+                <ListBox DockPanel.Dock="Left" Name="PiwoListPanel" ItemsSource="{Binding Piwa }" DisplayMemberPath="Nazwa" SelectedItem="{Binding SelectedPiwo}" >
+                </ListBox>
+                <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+                    <Button Command="{Binding FilterDataCommand}">Filter</Button>
+                    <TextBox MinWidth="100" Text="{Binding FilterValue}" ></TextBox>
+                    <Button Command="{Binding AddNewPiwoCommand}">Dodaj nowe piwo</Button>
+                    <Button Command="{Binding SaveChangesCommand}" >Zapisz zmiany</Button>
+                </StackPanel>
+                <Grid Name="PiwoDetailsList" DataContext="{Binding EditingPiwo }">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0">Nazwa:</Label>
+                        <TextBox Style="{StaticResource BoxWithErrors }" Grid.Row="0" Grid.Column="1" MinWidth="150" Text="{Binding Nazwa}"/>
+                        <Label Grid.Row="1">Cena:</Label>
+                        <TextBox Style="{StaticResource BoxWithErrors }" Grid.Row="1" Grid.Column="1" MinWidth="150" Text="{Binding Cena}"/>
+                        <Label Grid.Row="2">Procent alkoholu:</Label>
+                        <TextBox Style="{StaticResource BoxWithErrors }" Grid.Row="2" Grid.Column="1" MinWidth="150" Text="{Binding ProcentAlkoholu}"/>
+                        <Label Grid.Row="3">Nazwa producenta:</Label>
+                        <ComboBox Style="{StaticResource BoxWithErrors }" Grid.Row="3" Grid.Column="1" ItemsSource="{Binding DostepniProducenci}" DisplayMemberPath="Nazwa" SelectedItem="{Binding Producent}" />
+                        <Label Grid.Row="4">Kolor piwa:</Label>
+                        <ComboBox Style="{StaticResource BoxWithErrors }" Grid.Row="4" Grid.Column="1" ItemsSource="{Binding Source={StaticResource dataFromEnum}}" SelectedItem="{Binding KolorPiwa}" />
+                    </Grid>
+                </Grid>
+            </DockPanel>
         </TabItem>
         <TabItem Header="Producenci">
-            <Grid >
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="2*" />
-                </Grid.ColumnDefinitions>
-                <DockPanel Grid.Column="0" Grid.Row="0">
-                    <ListBox Name="ProducentListPanel" ItemsSource="{Binding ElementName=Window1, Path=ProducentDataList }" DisplayMemberPath="Nazwa">
-                    </ListBox>
-                </DockPanel>
-                <DockPanel Grid.Column="1" Grid.Row="0" Name="ProdDetailsList" DataContext="{Binding ElementName=ProducentListPanel, Path=SelectedItem }">
-                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-                        <TextBlock FontSize="20" Text="{Binding Path='Nazwa' }" />
-                    </StackPanel>
-                    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
-                        <TextBlock>  Miasto producenta:</TextBlock>
-                        <TextBlock Text="{Binding Path='Miasto' }" />
-                    </StackPanel>
-                </DockPanel>
-            </Grid>
+            <TabItem.DataContext>
+                <viewmodels:ProducentListViewModel />
+            </TabItem.DataContext>
+            <DockPanel LastChildFill="True">
+                <ListBox DockPanel.Dock="Left" Name="ProducentListPanel" ItemsSource="{Binding Producenci}" DisplayMemberPath="Nazwa" SelectedItem="{Binding SelectedProducent}" >
+                </ListBox>
+                <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
+                    <Button Command="{Binding FilterDataCommand}">Filter</Button>
+                    <TextBox MinWidth="100" Text="{Binding FilterValue}" ></TextBox>
+                    <Button Command="{Binding AddNewProducentCommand}">Dodaj nowego producenta</Button>
+                    <Button Command="{Binding SaveChangesCommand}" >Zapisz zmiany</Button>
+                </StackPanel>
+                <Grid Name="ProdDetailsList" DataContext="{Binding EditingProducent }">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0">Nazwa:</Label>
+                        <TextBox Style="{StaticResource BoxWithErrors }" Grid.Row="0" Grid.Column="1" MinWidth="150" Text="{Binding Nazwa}"/>
+                        <Label Grid.Row="1">Miasto:</Label>
+                        <TextBox Style="{StaticResource BoxWithErrors }" Grid.Row="1" Grid.Column="1" MinWidth="150" Text="{Binding Miasto}"/>
+                    </Grid>
+                </Grid>
+            </DockPanel>
         </TabItem>
     </TabControl>
 </Window>

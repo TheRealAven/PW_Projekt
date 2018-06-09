@@ -8,7 +8,6 @@ D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\bin\Debug\BLC.pdb
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\bin\Debug\BLC.dll.config
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\bin\Debug\Interfaces.pdb
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\bin\Debug\CORE.pdb
-D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\obj\Debug\MainWindow.g.cs
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\obj\Debug\App.g.cs
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\obj\Debug\UI_MarkupCompile.cache
@@ -21,3 +20,5 @@ D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\obj\Debug\UI.csproj.CoreCo
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\obj\Debug\UI.csproj.CopyComplete
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\obj\Debug\UI.exe
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\obj\Debug\UI.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\obj\Debug\UI.csprojAssemblyReference.cache
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\UI\obj\Debug\GeneratedInternalTypeHelper.g.cs

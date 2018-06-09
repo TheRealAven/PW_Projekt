@@ -18,3 +18,4 @@ D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.c
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.csproj.CopyComplete
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.dll
 D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.pdb
+D:\Users\Aven\Documents\Studia\Wizualne\PW_Projekt\DAOMock2\obj\Debug\DAOMock2.csprojAssemblyReference.cache
