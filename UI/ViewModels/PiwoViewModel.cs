@@ -11,7 +11,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Obst.ølCatalog.UI.ViewModels
 {
-    class PiwoViewModel : ViewModelBase
+    public class PiwoViewModel : ViewModelBase
     {
         private IPiwo _piwo;
         public IPiwo Piwo

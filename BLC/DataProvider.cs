@@ -10,9 +10,23 @@ using Obst.ølCatalog.CORE;
 
 namespace Obst.ølCatalog.BLC
 {
-    public class DataProvider
+    public sealed class DataProvider
     {
         private Settings _settings = new Settings();
+        private static readonly DataProvider _instance = new DataProvider();
+        public static DataProvider Instance
+        {
+            get
+            {
+                return _instance;
+            }
+        }
+
+        static DataProvider()
+        {
+
+        }
+
         public IDAO DAO { get; set; }
         public IEnumerable<IPiwo> Piwa
         {
@@ -53,8 +67,9 @@ namespace Obst.ølCatalog.BLC
             DAO.SaveProducent(producent, indeks);
         }
 
-        public DataProvider(string whichMock)
+        private DataProvider()
         {
+            string whichMock = _settings.mockName;
             Assembly assemblyDAO = Assembly.UnsafeLoadFrom(whichMock + ".dll");
             Type typeDAO = null;
 
@@ -68,9 +83,10 @@ namespace Obst.ølCatalog.BLC
                         break;
                     }
                 }
-            }catch(ReflectionTypeLoadException ex)
+            }
+            catch (ReflectionTypeLoadException ex)
             {
-                foreach(var e in ex.LoaderExceptions)
+                foreach (var e in ex.LoaderExceptions)
                 {
                     Console.WriteLine(e.Message);
                 }

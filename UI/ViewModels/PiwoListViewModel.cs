@@ -11,7 +11,7 @@ using UI.Properties;
 
 namespace Obst.ølCatalog.UI.ViewModels
 {
-    class PiwoListViewModel : ViewModelBase
+    public class PiwoListViewModel : ViewModelBase
     {
         public ObservableCollection<PiwoViewModel> Piwa { get; set; } = new ObservableCollection<PiwoViewModel>();
         private ListCollectionView _view;
@@ -25,7 +25,7 @@ namespace Obst.ølCatalog.UI.ViewModels
 
         public PiwoListViewModel()
         {
-            _provider = new DataProvider(_appSettings.mockName);
+            _provider = DataProvider.Instance;
             OnPropertyChanged("Piwa");
             GetAllPiwa();
             _view = (ListCollectionView)CollectionViewSource.GetDefaultView(Piwa);
@@ -36,8 +36,6 @@ namespace Obst.ølCatalog.UI.ViewModels
             EditingPiwo = Piwa[0];
             SelectedPiwo = EditingPiwo;
         }
-        
-        private Settings _appSettings = new Settings();
 
         private void GetAllPiwa()
         {

@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Obst.ølCatalog.UI.ViewModels
 {
-    class ProducentViewModel : ViewModelBase
+    public class ProducentViewModel : ViewModelBase
     {
         private IProducent _producent;
         public IProducent Producent

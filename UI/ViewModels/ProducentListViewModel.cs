@@ -13,7 +13,7 @@ using UI.Properties;
 
 namespace Obst.ølCatalog.UI.ViewModels
 {
-    class ProducentListViewModel: ViewModelBase
+    public class ProducentListViewModel: ViewModelBase
     {
         public ObservableCollection<ProducentViewModel> Producenci { get; set; } = new ObservableCollection<ProducentViewModel>();
         private ListCollectionView _view;
@@ -27,7 +27,7 @@ namespace Obst.ølCatalog.UI.ViewModels
 
         public ProducentListViewModel()
         {
-            _provider = new DataProvider(_appSettings.mockName);
+            _provider = DataProvider.Instance;
             OnPropertyChanged("Producenci");
             GetAllProducenci();
             _view = (ListCollectionView)CollectionViewSource.GetDefaultView(Producenci);
@@ -38,8 +38,6 @@ namespace Obst.ølCatalog.UI.ViewModels
             EditingProducent = Producenci[0];
             SelectedProducent = EditingProducent;
         }
-
-        private Settings _appSettings = new Settings();
 
         private void GetAllProducenci()
         {
